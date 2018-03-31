@@ -1,0 +1,137 @@
+
+#head {
+	background-color: red;
+	color: yellow;
+	font-size: 32pt;
+	height:100px;
+	font-family: sans-serif;
+	margin: 2%;
+	text-align: center;
+	}
+	
+#s1	{
+	display: block;
+	float:right;
+	width: 27%;
+	height: 300px;
+	padding: 1.5%;
+	margin: 2%;
+	background-color: green;
+	color: yellow;
+	font-size: 12pt;
+	font-family: sans-serif;
+	}
+	
+#s1_2{
+	display: block;
+	float:right;
+	width: 26%;
+	height: 300px;
+	padding: 1.5%;
+	margin: 2%;
+	background-color: yellow;
+	color: red;
+	font-size: 12pt;
+	font-family: sans-serif;
+	}
+	
+#ol.a {
+	list-style-type: number;
+	}
+	
+#ul.b{
+	list-style-position: inside;
+	}
+
+#s1_3{
+	display: block;
+	float:right;
+	width: 24%;
+	height:300px;
+	padding: 1.5%;
+	margin: 2%;
+	background-color: orange;
+	color: yellow;
+	font-size: 12pt;
+	font-family: sans-serif;
+	}
+	
+#s1_4 {
+	display: block;
+	float:right;
+	width: 42%;
+	height: 200px;
+	padding: 2%;
+	margin: 2%;
+	background-color: purple;
+	color: yellow;
+	font-size: 12pt;
+	font-family: sans-serif;
+	}
+	
+#s1_5 {
+	display: block;
+	float:right;
+	width: 42%;
+	height: 200px;
+	padding: 2%;
+	margin: 2%;
+	background-color: aqua;
+	color: red;
+	font-size: 12pt;
+	font-family: sans-serif;
+	}
+
+
+#s1_6 {
+	display: block;
+	float:right;
+	width: 42%;
+	height: 200px;
+	padding: 2%;
+	margin: 2%;
+	background-color: aqua;
+	color: red;
+	font-size: 12pt;
+	font-family: sans-serif;
+}
+#table1,  td, th
+	{   
+    border: 1px solid black;
+    text-align: center;
+	}
+#table1, th
+	{
+	border-collapse: collapse;
+    width: 15%;
+	}
+#th, td {
+	padding: 3px;
+	color: red;
+	font-size: 12pt;
+	font-family: sans-serif;
+	font-family: arial;
+	text-align: center;
+	}
+	
+
+.s1_2--image {
+	/* Set the image to 100% of the width of the box that contains it 
+		This will stop the image from going outside the edge of the box
+	*/
+	width: 100%;
+}
+
+.s1_4--video{
+	/* Get rid of the border on the iframe*/
+	border: 0;
+
+	/* Set the maximum width for the video box*/
+	max-width:200px;
+
+	/* Set the width of the video box to 100% of 200px
+		Doing it this way will let the video box get smaller if the window gets too small
+	*/
+	width: 100%;
+	
+}
