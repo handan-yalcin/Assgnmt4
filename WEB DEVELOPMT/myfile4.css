@@ -1,75 +1,43 @@
-#head {
-	background-color: violet;
-	color: black;
-	font-size: 32pt;
-	height:100px;
-	font-family: sans-serif;
-	margin: 1%;
-	margin-top: 2%;
-	padding-top: 2%;
-	text-align: center;
-	}
-	
 #s1	{
 	display: block;
-	float:right;
-	width: 20%;
 	height: 400px;
-	padding: 1%;
-	margin: 1%;
 	background-color: #7CFC00;
 	color: black;
 	font-size: 12pt;
 	font-family: sans-serif;
 	}
-	
+
 #s1_2{
 	display: block;
-	float:right;
-	width: 20%;
 	height: 400px;
-	padding: 1%;
-	margin: 1%;
 	background-color: yellow;
 	color: black;
 	font-size: 12pt;
 	font-family: sans-serif;
 	}
-	
+
 
 #s1_3{
 	display: block;
-	float:right;
-	width: 20%;
 	height:400px;
-	padding: 1%;
-	margin: 1%;
 	background-color: orange;
 	color: black;
 	font-size: 12pt;
 	font-family: sans-serif;
 	}
-	
+
 #s1_4 {
 	display: block;
-	float:right;
-	width: 20%;
 	height: 400px;
-	padding: 1%;
-	margin: 1%;
 	background-color: dodgerblue;
 	color: black;
 	font-size: 12pt;
 	font-family: sans-serif;
 	}
-	
+
 #s1_5 {
 	display: block;
-	float:right;
-	width: 20%;
 	height: 400px;
-	padding: 1%;
-	margin: 1%;
 	background-color: #FF00FF;
 	color: black;
 	font-size: 12pt;
@@ -79,36 +47,24 @@
 
 #s1_6 {
 	display: block;
-	float:right;
-	width: 20%;
 	height: 400px;
-	padding: 1%;
-	margin: 1%;
 	background-color: aqua;
 	color: black;
 	font-size: 12pt;
 	font-family: sans-serif;
 }
-	
+
 #s1_7 {
 	display: block;
-	float:right;
-	width: 20%;
 	height: 400px;
-	padding: 1%;
-	margin: 1%;
 	background-color: #8A2BE2;
 	color: black;
 	font-size: 12pt;
-	font-family: sans-serif;	
+	font-family: sans-serif;
 }
 #s1_8 {
 	display: block;
-	float:right;
-	width: 20%;
 	height: 400px;
-	padding: 1%;
-	margin: 1%;
 	background-color: violet;
 	color: black;
 	font-size: 12pt;
@@ -117,7 +73,7 @@
 
 
 .s1_1--image {
-	/* Set the image to 100% of the width of the box that contains it 
+	/* Set the image to 100% of the width of the box that contains it
 		This will stop the image from going outside the edge of the box
 	*/
 	display: block;
@@ -125,13 +81,13 @@
     margin-right: auto;
 	padding-bottom: 2%;
     width: 51%;
-	
-	
-	
+
+
+
 }
 
 .s1_2--image {
-	/* Set the image to 100% of the width of the box that contains it 
+	/* Set the image to 100% of the width of the box that contains it
 		This will stop the image from going outside the edge of the box
 	*/
 	display: block;
@@ -142,7 +98,7 @@
 }
 
 .s1_3--image {
-	/* Set the image to 100% of the width of the box that contains it 
+	/* Set the image to 100% of the width of the box that contains it
 		This will stop the image from going outside the edge of the box
 	*/
 	display: block;
@@ -152,7 +108,7 @@
     width: 51%;
 }
 .s1_4--image {
-	/* Set the image to 100% of the width of the box that contains it 
+	/* Set the image to 100% of the width of the box that contains it
 		This will stop the image from going outside the edge of the box
 	*/
 	display: block;
@@ -162,7 +118,7 @@
     width: 51%;
 }
 .s1_5--image {
-	/* Set the image to 100% of the width of the box that contains it 
+	/* Set the image to 100% of the width of the box that contains it
 		This will stop the image from going outside the edge of the box
 	*/
 	display: block;
@@ -172,7 +128,7 @@
     width: 50%;
 }
 .s1_6--image {
-	/* Set the image to 100% of the width of the box that contains it 
+	/* Set the image to 100% of the width of the box that contains it
 		This will stop the image from going outside the edge of the box
 	*/
 	display: block;
@@ -182,7 +138,7 @@
     width: 50%;
 }
 .s1_7--image {
-	/* Set the image to 100% of the width of the box that contains it 
+	/* Set the image to 100% of the width of the box that contains it
 		This will stop the image from going outside the edge of the box
 	*/
 	display: block;
@@ -192,7 +148,7 @@
     width: 50%;
 }
 .s1_8--image {
-	/* Set the image to 100% of the width of the box that contains it 
+	/* Set the image to 100% of the width of the box that contains it
 		This will stop the image from going outside the edge of the box
 	*/
 	display: block;
@@ -213,5 +169,36 @@
 		Doing it this way will let the video box get smaller if the window gets too small
 	*/
 	width: 100%;
-	
+
+}
+
+.book-gallery{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.layout-100{
+	width: 100%;
+}
+
+.layout-25{
+	width: 25%;
+}
+
+.book-gallery-content{
+	padding: 20px;
+	margin: 5px;
+	text-align: center;
+}
+
+.header-content{
+	padding: 20px;
+	margin: 5px;
+	text-align: center;
+	background-color: violet;
+	color: black;
+	font-size: 32pt;
+	height:100px;
+	font-family: sans-serif;
+	text-align: center;
 }
