@@ -1,194 +1,81 @@
 #s1	{
-	display: block;
-	height: 400px;
+/* Put repeated parts in one class, .book-gallery-content */
 	background-color: #7CFC00;
-	color: black;
-	font-size: 12pt;
-	font-family: sans-serif;
 	}
 
 #s1_2{
-	display: block;
-	height: 400px;
 	background-color: yellow;
-	color: black;
-	font-size: 12pt;
-	font-family: sans-serif;
-	}
+}
 
 
 #s1_3{
-	display: block;
-	height:400px;
 	background-color: orange;
-	color: black;
-	font-size: 12pt;
-	font-family: sans-serif;
-	}
+}
 
 #s1_4 {
-	display: block;
-	height: 400px;
 	background-color: dodgerblue;
-	color: black;
-	font-size: 12pt;
-	font-family: sans-serif;
-	}
+}
 
 #s1_5 {
-	display: block;
-	height: 400px;
 	background-color: #FF00FF;
-	color: black;
-	font-size: 12pt;
-	font-family: sans-serif;
-	}
+}
 
 
 #s1_6 {
-	display: block;
-	height: 400px;
 	background-color: aqua;
-	color: black;
-	font-size: 12pt;
-	font-family: sans-serif;
 }
 
 #s1_7 {
-	display: block;
-	height: 400px;
 	background-color: #8A2BE2;
-	color: black;
-	font-size: 12pt;
-	font-family: sans-serif;
 }
 #s1_8 {
-	display: block;
-	height: 400px;
 	background-color: violet;
-	color: black;
-	font-size: 12pt;
-	font-family: sans-serif;
 }
 
 
 .s1_1--image {
-	/* Set the image to 100% of the width of the box that contains it
-		This will stop the image from going outside the edge of the box
-	*/
-	display: block;
-    margin-left: auto;
-    margin-right: auto;
-	padding-bottom: 2%;
-    width: 51%;
-
-
-
 }
 
 .s1_2--image {
-	/* Set the image to 100% of the width of the box that contains it
-		This will stop the image from going outside the edge of the box
-	*/
-	display: block;
-    margin-left: auto;
-    margin-right: auto;
-	padding-bottom: 2%;
-    width: 51%;
 }
 
 .s1_3--image {
-	/* Set the image to 100% of the width of the box that contains it
-		This will stop the image from going outside the edge of the box
-	*/
-	display: block;
-    margin-left: auto;
-    margin-right: auto;
-	padding-bottom: 2%;
-    width: 51%;
 }
 .s1_4--image {
-	/* Set the image to 100% of the width of the box that contains it
-		This will stop the image from going outside the edge of the box
-	*/
-	display: block;
-    margin-left: auto;
-    margin-right: auto;
-	padding-bottom: 2%;
-    width: 51%;
 }
 .s1_5--image {
-	/* Set the image to 100% of the width of the box that contains it
-		This will stop the image from going outside the edge of the box
-	*/
-	display: block;
-    margin-left: auto;
-    margin-right: auto;
-	padding-bottom: 2%;
-    width: 50%;
 }
 .s1_6--image {
-	/* Set the image to 100% of the width of the box that contains it
-		This will stop the image from going outside the edge of the box
-	*/
-	display: block;
-    margin-left: auto;
-    margin-right: auto;
-	padding-bottombottom: 2%;
-    width: 50%;
 }
 .s1_7--image {
-	/* Set the image to 100% of the width of the box that contains it
-		This will stop the image from going outside the edge of the box
-	*/
-	display: block;
-    margin-left: auto;
-    margin-right: auto;
-	padding-bottom: 2%;
-    width: 50%;
 }
 .s1_8--image {
-	/* Set the image to 100% of the width of the box that contains it
-		This will stop the image from going outside the edge of the box
-	*/
-	display: block;
-    margin-left: auto;
-    margin-right: auto;
-	padding-bottom: 2%;
-    width: 50%;
 }
 
-.s1_4--video{
-	/* Get rid of the border on the iframe*/
-	border: 0;
-
-	/* Set the maximum width for the video box*/
-	max-width:200px;
-
-	/* Set the width of the video box to 100% of 200px
-		Doing it this way will let the video box get smaller if the window gets too small
-	*/
-	width: 100%;
-
-}
-
+/*
+* if you set display flex on a parent like <section class="book-gallery">
+* it will try to put all the immediate children like <div class="small-layout-100 large-layout-25 ">
+* on the same line.
+* flex-wrap: wrap will make those children go to the next line if they are too wide to fit on one line
+*/
+/*
+ * This can also be done by not using flex and making the children display: inline-block but you have to use a trick to get rid of spaces between boxes that are added by making them inline-block (having no space between divs)
+ */
 .book-gallery{
 	display: flex;
 	flex-wrap: wrap;
 }
 
-.layout-100{
-	width: 100%;
-}
-
-.layout-25{
-	width: 25%;
-}
-
 .book-gallery-content{
 	padding: 20px;
 	margin: 5px;
+	height: 400px;
 	text-align: center;
+	font-size: 12pt;
+	font-family: sans-serif;
+	color: black;
+	/* Make the boxes scroll down if the image goes outside of the box on the bottom */
+	overflow: auto;
 }
 
 .header-content{
@@ -201,4 +88,24 @@
 	height:100px;
 	font-family: sans-serif;
 	text-align: center;
+}
+
+.book-gallery-image{
+	max-height: 150px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 5px;
+}
+
+/* small screen is the default layout so don't put it in a media query */
+.small-layout-100{
+	width: 100%;
+}
+
+/* This means that when the screen is at least 799.9px wide, use this class on the element. It will override the width in .small-layout-100 */
+@media only screen and (min-width: 799.9px) {
+		.large-layout-25{
+			width: 25%;
+		}
+
 }
